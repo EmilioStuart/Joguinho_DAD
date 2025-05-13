@@ -1,0 +1,38 @@
+*{
+    padding: 0;
+    margin: 0;
+    font-family: 'fruit_ninja';
+}
+
+@font-face {
+    font-family: 'fruit_ninja';
+    src: url(../fonts/go3v2.ttf);
+}
+
+body{
+    background-image: url(../image/fruit_ninja_background.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+#pontuacao, 
+#tempo{
+    position: absolute;
+    top: 0;
+    margin: 15px;
+    font-size: 50px;
+    color: #EBD94A;
+    text-shadow:
+        -3px -3px 0 #311300,
+        3px -3px 0 #311300,
+        -3px  3px 0 #311300,
+        3px  3px 0 #311300;
+}
+
+#pontuacao{
+    right: 0;
+}
+
+#tempo{
+    left: 0;
+}
