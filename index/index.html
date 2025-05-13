@@ -7,12 +7,17 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="../style/style.css">
     <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="../script/script.js"></script>
     <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.min.js"></script>
 </head>
 <body>
     <div id="pontuacao">Pontos: 0</div>
-    <div id="tempo">Tempo: 30</div>
+    <div id="tempo">Tempo: <span id="timer"></span></div>
 
-    <script src="../script/script.js"></script>
+    <script>
+
+        timer(document.getElementById("timer"));
+
+    </script>
 </body>
 </html>
