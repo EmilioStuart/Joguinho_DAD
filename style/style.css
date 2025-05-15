@@ -13,6 +13,7 @@ body{
     background-image: url(../image/fruit_ninja_background.png);
     background-repeat: no-repeat;
     background-size: cover;
+    overflow: hidden;
 }
 
 #pontuacao, 
@@ -21,7 +22,7 @@ body{
     top: 0;
     margin: 15px;
     font-size: 50px;
-    color: #EBD94A;
+    color: #EBD90A;
     text-shadow:
         -3px -3px 0 #311300,
         3px -3px 0 #311300,
@@ -35,4 +36,26 @@ body{
 
 #tempo{
     left: 0;
+}
+
+.bolinha {
+    animation: subirEdescer 2s ease-in-out forwards;
+    position: absolute;
+    width: fit-content;
+    height: fit-content;
+    cursor: pointer;
+}
+
+
+
+@keyframes subirEdescer {
+    0% {
+        bottom: 0;
+    }
+    50% {
+        bottom: 80%;
+    }
+    100% {
+        bottom: -10%;
+    }
 }

@@ -2,22 +2,34 @@
 <html lang="pt-br">
 <head>
     <meta charset="UTF-8">
-    <title>Jogo dos Círculos</title>
+    <title>Ninja das Frutas</title>
     <link rel="shortcut icon" href="./logo_white.png" type="image/x-icon">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="../style/style.css">
+    <link rel="shortcut icon" href="../image/velhinho.png" type="image/x-icon">
     <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
     <script src="../script/script.js"></script>
     <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.min.js"></script>
 </head>
 <body>
-    <div id="pontuacao">Pontos: 0</div>
+    <div id="pontuacao">Pontos: <span id="pontos"></span></div>
     <div id="tempo">Tempo: <span id="timer"></span></div>
 
     <script>
+        document.addEventListener('mousemove', e => {
+            const rastro = document.createElement('div');
+            rastro.classList.add('linha');
+            rastro.style.left = e.clientX + 'px';
+            rastro.style.top = e.clientY + 'px';
+
+            document.body.appendChild(rastro);
+
+            setTimeout(() => {
+            rastro.remove();
+            }, 500); // remove depois da animação
+        });  
 
         timer(document.getElementById("timer"));
-
     </script>
 </body>
 </html>
