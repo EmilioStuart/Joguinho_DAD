@@ -59,3 +59,24 @@ body{
         bottom: -10%;
     }
 }
+
+.linha {
+    position: fixed;
+    width: 20px;
+    height: 20px;
+    background: white;
+    border-radius: 50%;
+    pointer-events: none;
+    opacity: 0.2;
+    box-shadow: 0 0 20px white;
+    transform: translate(-50%, -50%);
+    animation: trail 0.5s ease-out forwards;
+}
+
+@keyframes trail {
+    to {
+        opacity: 0;
+        transform: scale(2) translate(-50%, -50%);
+    }
+}
+
