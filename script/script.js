@@ -17,19 +17,19 @@ function timer(timerPlace) {
 
         // A cada intervalo definido, aumenta a quantidade de frutas (máximo 5)
         if (timer % intervaloAumento === 0 && frutasPorVez < 5) {
-        frutasPorVez++;
-        window.frutasPorVez = frutasPorVez;
+            frutasPorVez++;
+            window.frutasPorVez = frutasPorVez;
         }
 
         // Quando o tempo chegar a 10 segundos, muda a cor para vermelho (alerta)
         if (timer === 10) {
-        timerPlace.style.color = "#ff0000";
+            timerPlace.style.color = "#ff0000";
         }
 
         // Quando o tempo acabar, para o cronômetro e redireciona para a página final
         if (timer === 0) {
-        clearInterval(intervalId);
-        location.href = "../index/paginaFinal.html";
+            clearInterval(intervalId);
+            location.href = "../index/paginaFinal.html";
         }
 
         timer--; // Decrementa o tempo a cada segundo
