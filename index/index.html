@@ -15,23 +15,11 @@
     <div id="pontuacao">Pontos: <span id="pontos"></span></div>
     <div id="tempo">Tempo: <span id="timer"></span></div>
 
-    
+    <canvas id="rastro"></canvas>
 
     <script>
-        document.addEventListener('mousemove', e => {
-            const rastro = document.createElement('div');
-            rastro.classList.add('linha');
-            rastro.style.left = e.clientX + 'px';
-            rastro.style.top = e.clientY + 'px';
-
-            document.body.appendChild(rastro);
-
-            setTimeout(() => {
-            rastro.remove();
-            }, 500); // remove depois da animação
-        });  
-
         timer(document.getElementById("timer"));
     </script>
+    <script src="../script/rastro.js"></script>
 </body>
 </html>

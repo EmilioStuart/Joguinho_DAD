@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <title>Ninja das Frutas</title>
+    <link rel="shortcut icon" href="./logo_white.png" type="image/x-icon">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../style/style.css">
+    <link rel="shortcut icon" href="../image/velhinho.png" type="image/x-icon">
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.min.js"></script>
+</head>
+<body id="final">
+    <div class="quadrado">
+        <h1>Parabéns! Você fez um total de: <span id="pontos"></span> pontos!</h1>
+        <a href="../index/index.html"><img src="../image/reiniciar.png" alt=""></a>
+    </div>
+
+    <script>
+        document.getElementById("pontos").textContent = localStorage.getItem("pontos");
+    </script>
+</body>
+</html>

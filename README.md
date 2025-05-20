@@ -6,7 +6,7 @@ Um jogo simples e divertido inspirado no clássico *Fruit Ninja*, feito com HTML
 
 ## 🎮 Como Jogar
 
-Você tem **1 minuto e 30 segundos** para fazer o máximo de pontos possível!
+Você tem **1 minuto** para fazer o máximo de pontos possível!
 
 Para marcar pontos, basta passar o **mouse** sobre as frutas que estarão caindo na tela.
 

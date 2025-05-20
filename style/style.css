@@ -1,6 +1,7 @@
 *{
     padding: 0;
     margin: 0;
+    user-select: none;
     font-family: 'fruit_ninja';
 }
 
@@ -46,8 +47,6 @@ body{
     cursor: pointer;
 }
 
-
-
 @keyframes subirEdescer {
     0% {
         bottom: 0;
@@ -60,23 +59,33 @@ body{
     }
 }
 
-.linha {
-    position: fixed;
-    width: 20px;
-    height: 20px;
-    background: white;
-    border-radius: 50%;
-    pointer-events: none;
-    opacity: 0.2;
-    box-shadow: 0 0 20px white;
-    transform: translate(-50%, -50%);
-    animation: trail 0.5s ease-out forwards;
+#final{
+    display: flex;
+    height: 100vh;
+    justify-content: center;
+    align-items: center;
 }
 
-@keyframes trail {
-    to {
-        opacity: 0;
-        transform: scale(2) translate(-50%, -50%);
+.quadrado{
+    width: 60%;
+    height: 300px;
+    display: flex;
+    flex-direction: column;
+    color: #EBD90A;
+    font-size: 150%;
+    align-items: center;
+    justify-content: space-evenly;
+    text-shadow:
+        -3px -3px 0 #311300,
+        3px -3px 0 #311300,
+        -3px  3px 0 #311300,
+        3px  3px 0 #311300;
+    h1{
+        text-align: center;
+        margin: 0%;
+    }
+    img{
+        width: 100px;
+        height: 100px;
     }
 }
-
