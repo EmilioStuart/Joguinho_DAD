@@ -13,7 +13,6 @@ Para marcar pontos, basta passar o **mouse** sobre as frutas que estarão caindo
 Acesse o jogo diretamente pelo link:
 <a href="https://emiliostuart.github.io/Ninja_das_Frutas/index/" target="_blank">Jogar Ninja das Frutas 🍉</a>
 
-
 ## 🛠 Tecnologias Utilizadas
 
 * HTML
@@ -33,5 +32,3 @@ Acesse o jogo diretamente pelo link:
 ## 🎯 Objetivo
 
 Corte o máximo de frutas que conseguir antes que o tempo acabe!
-
-
