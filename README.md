@@ -11,7 +11,7 @@ Você tem **1 minuto** para fazer o máximo de pontos possível!
 Para marcar pontos, basta passar o **mouse** sobre as frutas que estarão caindo na tela.
 
 Acesse o jogo diretamente pelo link:
-[https://emiliostuart.github.io/Ninja\_das\_Frutas/index/](https://emiliostuart.github.io/Ninja_das_Frutas/index/)
+<a href="https://emiliostuart.github.io/Ninja_das_Frutas/index/" target="_blank">Jogar Ninja das Frutas 🍉</a>
 
 
 ## 🛠 Tecnologias Utilizadas
